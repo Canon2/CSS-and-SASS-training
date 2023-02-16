@@ -6,11 +6,6 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-/* On First Commit this is what we've learned 
- 1. The best way to perform a basic reset using the universal selector
- 2. How to set project-wide font definitions.
- 3. How to clip parts of elements using clip-path (https://bennettfeely.com/clippy/?fbclid=IwAR0BIzOqEvu1waTQVUiz6Mlil4lMjIt6mktUh2HLTNAwGPCsZc_Zgy0Tq-k#:~:text=The%20clip%2Dpath%20property%20allows,the%20same%20number%20of%20points)
-*/
 /* applying a universal reset */
 * {
     margin: 0;
@@ -36,6 +31,44 @@ body {
         url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
+    position: relative;
 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+
 }
